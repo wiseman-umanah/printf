@@ -11,5 +11,6 @@ int handle_per_n_char(char c);
 char *_uint_to_str(unsigned int num);
 int handle_u(unsigned int num);
 int handle_oct(unsigned int num);
+int handle_bin(unsigned int num);
 
 #endif /*MAIN_H*/

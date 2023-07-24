@@ -30,6 +30,8 @@ int _printf(const char *format, ...)
 				count += handle_u(va_arg(args, unsigned int));
 			else if (*format == 'o')
 				count += handle_oct(va_arg(args, unsigned int));
+			else if (*format == 'b')
+				count += handle_bin(va_arg(args, unsigned int));
 		}
 		else
 		{
