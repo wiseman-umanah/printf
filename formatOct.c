@@ -13,8 +13,8 @@ int handle_oct(unsigned int num)
 	int j = 0;
 	int *str = malloc((sizeof(int) * 12) + 1);
 
-	if (str == NULL)
-		return (NULL);
+	if (str == 0)
+		return (0);
 	str[0] = 0;
 	while (num != 0)
 	{
