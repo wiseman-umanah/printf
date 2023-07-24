@@ -6,19 +6,19 @@
 * Return: returns the count of character printed.
 */
 
-int handle_per_n_char(char c)
+int handle_per_n_char(char c, char arg)
 {
 	int i;
 
 	i = 0;
-	if (c == '0')
+	if (c == '%')
 	{
 		_putchar('%');
 		i++;
 	}
 	else
 	{
-		_putchar(c);
+		_putchar(arg);
 		i++;
 	}
 	return (i);
