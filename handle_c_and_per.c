@@ -3,6 +3,7 @@
 /**
 * handle_per_n_char - handles string of char datatype
 * @c: the character
+* @arg: the arg to print
 * Return: returns the count of character printed.
 */
 
