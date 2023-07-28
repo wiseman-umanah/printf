@@ -8,7 +8,6 @@ char *_int_to_str(int num);
 int len_of_str(int num);
 int handle_d(int num);
 int handle_s(char c, char *str);
-int handle_per_n_char(char c, char arg);
 int handle_S(char *str);
 int dec_to_hex(char c, unsigned int num);
 int rot13(char *s);
@@ -17,5 +16,6 @@ int handle_u(char c, unsigned int num);
 int handle_oct(unsigned int num);
 int handle_bin(unsigned int num);
 int handle_r(char c, char *str);
+int handle_non_spec(char c);
 
 #endif /*MAIN_H*/

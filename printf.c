@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 		{
 			format++;
 			if (*format == 'c' || *format == '%')
-				count += handle_per_n_char(*format, va_arg(args, int));
+				count += *format == 'c' ? _putchar(va_arg(args, int)) : _putchar(*format);
 			else if (*format == 's' || *format == 'S')
 				count += handle_s(*format, va_arg(args, char *));
 			else if (*format == 'd' || *format == 'i')
@@ -33,6 +33,8 @@ int _printf(const char *format, ...)
 				count += handle_r(*format, va_arg(args, char *));
 			else if (*format == 'x' || *format == 'X')
 				count += dec_to_hex(*format, va_arg(args, int));
+			else
+				count += handle_non_spec(*format);
 		}
 		else
 		{
