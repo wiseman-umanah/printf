@@ -12,6 +12,11 @@ int dec_to_hex(char c, unsigned int num)
 {
 	int count = 0;
 
+	if (num == 0)
+	{
+		count = _putchar('0');
+		return (count);
+	}
 	if (!num)
 		return (0);
 	count += dec_to_hex(c, num / 16);
