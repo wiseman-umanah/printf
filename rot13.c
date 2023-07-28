@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-* print_rot13 - encodes a string using rot13 encryption
+* rot13 - encodes a string using rot13 encryption
 * @s: string to be encoded
 *
 * Return: number of chars printed

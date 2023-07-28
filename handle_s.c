@@ -10,10 +10,21 @@
 
 int handle_s(char c, char *str)
 {
-	int i;
+	int i, j;
+	char err[6] = "(nil)";
 
 	i = 0;
-	if (c == 'S')
+	j = 0;
+	if (str == NULL)
+	{
+		while (err[j] != '\0')
+		{
+			_putchar(err[j]);
+			j++;
+			i++;
+		}
+	}
+	else if (c == 'S' && str != NULL)
 	{
 		i += handle_S(str);
 	}
