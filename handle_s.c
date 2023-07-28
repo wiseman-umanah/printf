@@ -11,7 +11,7 @@
 int handle_s(char c, char *str)
 {
 	int i, j;
-	char err[6] = "(nil)";
+	char err[7] = "(null)";
 
 	i = 0;
 	j = 0;
