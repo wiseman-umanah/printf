@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
 * handle_d - This function is for integer handling
@@ -11,13 +12,21 @@ int handle_d(int num)
 {
 	char *str = _int_to_str(num);
 	int i;
+	char *temp;
 
 	i = 0;
-	while (*str != '\0')
+	temp = str;
+	if (temp == NULL)
 	{
-		_putchar(*str);
-		str++;
+		free(str);
+		return (i);
+	}
+	while (*temp != '\0')
+	{
+		_putchar(*temp);
+		temp++;
 		i++;
 	}
+	free(str);
 	return (i);
 }
