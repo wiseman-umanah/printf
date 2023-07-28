@@ -16,6 +16,12 @@ int handle_bin(unsigned int num)
 	if (str == 0)
 		return (0);
 	str[0] = 0;
+	if (num == 0)
+	{
+		j = _putchar('0');
+		free(str);
+		return (j);
+	}
 	while (num != 0)
 	{
 		rem = num % 2;
